@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belowing</title>
+        <link rel="shortcut icon" href="../img/iconMin.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+    <body class="bg-dark text-white">
+        <main class="d-flex flex-column justify-content-center align-items-center vh-100">
+            <div id="timer-input">
+                <label for="user-id" class="form-label">Insira o tempo do temporizador (HH:mm:ss):</label>
+                <input type="time" step="1" id="time-input" value="">
+            </div>
+            <button id="botao-iniciar" class="btn btn-primary" onclick="temporizador()">Iniciar Temporizador</button>
+            <h1 id="timer-display" hidden></h1>
+            <button id="botao-parar" class="btn btn-primary" onclick="pararTemporizador()" hidden>Parar Temporizador</button>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>
